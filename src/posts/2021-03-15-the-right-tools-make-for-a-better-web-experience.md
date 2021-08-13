@@ -9,10 +9,6 @@ Today I had to deploy a quick landing page for a client. I opted to use WordPres
 
 Installing WordPress itself took less than the famous five minutes, but I soon ran into problems. First after installing the Divi theme I got the dreaded: "There has been a critical error on this website."
 
-![](images/wordpress_critical_error.png)
-
-"There has been a critical error on this website."
-
 I purged the database, reinstalled WordPress, and everything seemed to work well. Then I customized the site a little and tried to test it using different browsers and devices. For some reason I could not see any images when I visited the site using Firefox and Brave. Same story on the mobile version of Chrome. And the site took ages to load.
 
 What should have been a quick job, perhaps a few hours, turned out to be a wasted afternoon spent trawling through WordPress forums, going back and forth with the hosting providers and countless installations and uninstallations of various themes and plugins.
