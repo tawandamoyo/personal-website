@@ -1,12 +1,13 @@
 ---
 layout: home
-title: A simple starter kit for Eleventy
+title: Programming, and other things
 postsHeading: Latest posts
 archiveButtonText: See all posts
-metaDesc: 'Hylia is a lightweight Eleventy starter kit to help you to create your own blog or personal website.'
-socialImage: ''
+metaDesc: 'The blog and website of Tawanda Moyo'
 ---
 
-Hylia is a lightweight [Eleventy](https://11ty.io) starter kit with [Netlify CMS](https://www.netlifycms.org/) pre-configured, so that you can one-click install a progressive, accessible blog in minutes. It also gives you a well organised starting point to extend yourself. It’s by [Andy Bell](https://twitter.com/hankchizljaw) and [friends](https://github.com/aarongustafson/hylia/graphs/contributors).
+Hi, I'm Tawanda. I like programming and contributing to Open Source. Areas I'm interested in include all things JavaScript, Linux, Browsers, Web Perfomance and Open Access
 
-Get started now by [deploying Hylia to Netlify.](https://app.netlify.com/start/deploy?repository=https://github.com/hankchizljaw/hylia&stack=cms)
+For more about what I'm doing now, check out my [now page](https://tawanda.dev/now).
+
+I'm also on Twitter as [@tbmoyo](https://twitter.com/tbmoyo).
