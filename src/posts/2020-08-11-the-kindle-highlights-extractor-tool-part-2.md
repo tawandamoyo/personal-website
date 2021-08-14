@@ -10,7 +10,7 @@ tags:
 coverImage: "kindle-e1613119249898.jpg"
 ---
 
-Yesterday [I wrote about a tool I'm building](https://tawanda.dev/building-my-first-app-a-kindle-reader-highlights-extractor-part-1/) to automatically sort through and export my Kindle Paperwhite clippings. I've since made progress as I'll detail here.
+Yesterday [I wrote about a tool I'm building](https://tawanda.dev/posts/2020-08-10-building-my-first-app-a-kindle-reader-highlights-extractor-part-1/) to automatically sort through and export my Kindle Paperwhite clippings. I've since made progress as I'll detail here.
 
 ## Opening a txt file in Node
 

@@ -10,7 +10,7 @@ coverImage: "kindle-e1613119249898.jpg"
 > 
 > J. R. R. Tolkien, foreword to Lord of The Rings
 
-I recently went back to my Kindle Tool, ([Part 1](https://tawanda.dev/building-my-first-app-a-kindle-reader-highlights-extractor-part-1/), [Part 2](https://tawanda.dev/the-kindle-highlights-extractor-tool-part-2/)) to try and add more features. I wanted to have to automatically create txt files so I could easily review the highlights.
+I recently went back to my Kindle Tool, ([Part 1](https://tawanda.dev/posts/2020-08-10-building-my-first-app-a-kindle-reader-highlights-extractor-part-1/), [Part 2](https://tawanda.dev/posts/2020-08-11-the-kindle-highlights-extractor-tool-part-2/)) to try and add more features. I wanted to have to automatically create txt files so I could easily review the highlights.
 
 Firstly I needed to make the a new folder called books to hold all the books. Using fs.mkdir, (and StackOveflow) this was pretty straightforward:
 

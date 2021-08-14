@@ -1,12 +1,12 @@
 ---
 layout: home
-title: Programming, and other things
+title: Hi, I'm Tawanda
 postsHeading: Latest posts
 archiveButtonText: See all posts
 metaDesc: 'The blog and website of Tawanda Moyo'
 ---
 
-Hi, I'm Tawanda. I like programming and contributing to Open Source. Areas I'm interested in include all things JavaScript, Linux, Browsers, Web Perfomance and Open Access
+I like programming and contributing to Open Source. Areas I'm interested in include Linux, Browsers, Web Perfomance, Online Education and Open Access to the Internet and all things JavaScript.
 
 For more about what I'm doing now, check out my [now page](https://tawanda.dev/now).
 
