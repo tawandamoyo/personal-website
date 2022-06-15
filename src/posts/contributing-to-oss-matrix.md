@@ -9,7 +9,7 @@ tags:
   - "Git"
 ---
 
-I recently made a contribution to an open source project called Matrix. As a new contributor to the project and someone just getting started in the Open Source world, it was daunting, but it turned out to be easier and more approachable than I had imagined.
+I recently made a contribution to an open source project called [Matrix](https://matrix.org). As a new contributor to the project and someone just getting started in the Open Source world, it was daunting, but it turned out to be easier and more approachable than I had imagined.
 
 ## What is Matrix?
 
@@ -17,7 +17,7 @@ Matrix is an open source project that publishes the Matrix open standard for sec
 
 With Matrix you can have a single application that connects to different services using what are called Bridges and you host your own communication, or choose someone to host for you. You could, for example, use one app to communicate on WhatsApp, Signal, Telegram and Messenger.
 
-There are plenty of clients you can choose to use with Matrix such as Element, Hydrogen, Nheko and others.
+There are plenty of clients you can choose to use with Matrix such as [Element](https://element.io/) Hydrogen, Nheko and others.
 
 ## The Problem
 
@@ -31,7 +31,7 @@ The Matrix website is made using Gatsby which is a React based framework for del
 
 ## The Solution
 
-I had already cloned the repo and set up a local dev environement following the instructions in the README.md file so what was left was to find the code for the animation.
+I had already cloned the repo and set up a local dev environment following the instructions in the README.md file so what was left was to find the code for the animation.
 
 Searching through the codebase I found the relevant file that controls the animation to be `gatsby/static/how-it-works.js` which has a function called `nextStage`, which controls the animation.
 
