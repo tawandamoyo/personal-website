@@ -9,7 +9,7 @@ tags:
   - "Git"
 ---
 
-I recently made a contribution to an open source project called Matrix. As a new contributor to the project and someone just getting started in the Open Source world, it was daunting, but it turned out to be easier and more approachable than I had imagined.
+I recently made a contribution to an open source project called [Matrix](https://matrix.org). As a new contributor to the project and someone just getting started in the Open Source world, it was daunting, but it turned out to be easier and more approachable than I had imagined.
 
 ## What is Matrix?
 
