@@ -15,13 +15,13 @@ My goal was to get all the posts he wrote and save them as either plaintext file
 
 ## Planning
 
-The blog I intended to scrap lives at https://bigsr.africa and is a WordPress site. I googled around a bit and because I am a JavaScript person I decided to scrap the site using Puppeteer which is a Node.js library which provides an API to control Chrome or Chromium. In other words Puppeteer allows us to control a browser with code.
+The blog I intended to scrap lives at [https://bigsr.africa](https://bigsr.africa) and is a WordPress site. I googled around a bit and because I am a JavaScript person I decided to scrap the site using Puppeteer which is a Node.js library which provides an API to control Chrome or Chromium. In other words Puppeteer allows us to control a browser with code.
 
 Puppeteer can do most of the things that a human can manually do in the browser including generating screenshots and PDFs of pages, crawling pages, submitting forms and testing Chrome extensions.
 
 It is important when scrapping a website to visit it and look at how the content is structured. My plan was to get all the links to the posts, store them in an array and the loop through the array opening each link one by one and saving the post as a pdf.
 
-All the articles on the website can be found on https://bigsr.africa/articles. However there is a challenge. The website uses infinite scroll, which means when you reach the bottom of that page it loads more content and continues like that until there is no more content to load.
+All the articles on the website can be found on [https://bigsr.africa/articles](https://bigsr.africa/articles). However there is a challenge. The website uses infinite scroll, which means when you reach the bottom of that page it loads more content and continues like that until there is no more content to load.
 
 Since Puppeteer more or less simulates real browser interaction, it is possible to make it scroll to the bottom of a page, wait for a set time and then scroll again, as a real user might, and I found some interesting implementations on StackOverflow. However the site sometimes didn't finish loading the infinite scroll so I decided to look for another option.
 
@@ -51,7 +51,7 @@ Installing Puppeteer also downloads a version of Chromium that works best best w
 
 As with a normal browsing session, one starts with opening the browser, then navigating to a particular page. In puppeteer this is done as follows:
 
-```
+```javascript
 const puppeteer = require("puppeteer");
 const fs = require("fs");
 
@@ -81,7 +81,7 @@ On each page got the links and pushed them to an array, then concatenated that a
 
 The `page.evaluate()` method in Puppeteer allows users to run JavaScript on the browser giving access to browser APIs such as `document.querySelector()`. When using `page.evaluate()` you leave the Node.js (Puppeteer) environment and enter the DOM.
 
-```
+```javascript
 ...
 let currentPage = 1;
 let pagesToScrape = 44;
@@ -110,7 +110,7 @@ After saving and running the code I printed the length of `postLinks` to the con
 
 So I had to clean up the array and remove duplicates.
 
-```
+```javascript
 let postLinks = [... new Set(postLinks)];
 ```
 
@@ -124,7 +124,7 @@ I used `page.evaluate()` to extract the title and date from each article, and th
 
 Puppeteer comes with a `.pdf()` method that creates `.pdf` files from the html on a page and I called this to create the page. Once an article is created the page closes and moves on to the next.
 
-```
+```javascript
 for (let link of postLinks) {
 	try {
 		const page = await browser.newPage();
