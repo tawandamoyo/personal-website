@@ -40,7 +40,7 @@ npm init
 
 Then I installed puppeteer and created a file called `index.js` for the code:
 
-```zsh
+```bash
 npm install puppeteer
 touch index.js
 ```
