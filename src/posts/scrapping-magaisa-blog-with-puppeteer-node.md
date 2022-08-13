@@ -51,7 +51,7 @@ Installing Puppeteer also downloads a version of Chromium that works best best w
 
 As with a normal browsing session, one starts with opening the browser, then navigating to a particular page. In puppeteer this is done as follows:
 
-```JavaScript
+```
 const puppeteer = require("puppeteer");
 const fs = require("fs");
 
@@ -81,7 +81,7 @@ On each page got the links and pushed them to an array, then concatenated that a
 
 The `page.evaluate()` method in Puppeteer allows users to run JavaScript on the browser giving access to browser APIs such as `document.querySelector()`. When using `page.evaluate()` you leave the Node.js (Puppeteer) environment and enter the DOM.
 
-```Node.js
+```
 ...
 let currentPage = 1;
 let pagesToScrape = 44;
@@ -110,7 +110,7 @@ After saving and running the code I printed the length of `postLinks` to the con
 
 So I had to clean up the array and remove duplicates.
 
-```Node.js
+```
 let postLinks = [... new Set(postLinks)];
 ```
 
@@ -124,7 +124,7 @@ I used `page.evaluate()` to extract the title and date from each article, and th
 
 Puppeteer comes with a `.pdf()` method that creates `.pdf` files from the html on a page and I called this to create the page. Once an article is created the page closes and moves on to the next.
 
-```JavaScript
+```
 for (let link of postLinks) {
 	try {
 		const page = await browser.newPage();
@@ -164,7 +164,6 @@ for (let link of postLinks) {
 	};
 }
 ```
-
 
 I ran the code, waited for quite some time and voila, I now had a folder called `bsr` which contained the posts as pds in folders organized by year and month.
 
