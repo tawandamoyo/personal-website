@@ -9,11 +9,11 @@ tags:
   - "Git"
 ---
 
-I recently made a contribution to an open source project called [Matrix](https://matrix.org). As a new contributor to the project and someone just getting started in the Open Source world, it was daunting, but it turned out to be easier and more approachable than I had imagined.
+I recently made a contribution to an open source project called [Matrix](https://matrix.org). As a new contributor to the project and someone just getting started in the Open Source world, it was daunting but it turned out to be easier and more approachable than I had imagined.
 
 ## What is Matrix?
 
-Matrix is an open source project that publishes the Matrix open standard for secure, decentralised, real-time communications. While that sounds complicated it basically comes to down to having control over our communications and removing the need for a ton of apps to manage real time communications on the internet. 
+Matrix is an open source project that publishes the Matrix open standard for secure, decentralized, real-time communications. While that sounds complicated it basically comes to down to having control over our communications and removing the need for a ton of apps to manage real time communications on the internet.
 
 With Matrix you can have a single application that connects to different services using what are called Bridges and you host your own communication, or choose someone to host for you. You could, for example, use one app to communicate on WhatsApp, Signal, Telegram and Messenger.
 
@@ -23,17 +23,17 @@ There are plenty of clients you can choose to use with Matrix such as [Element](
 
 There was a bug on the Matrix website homepage. There is an animation there showing how Matrix works and users were unable to select text on the panels accompanying the different animation frames.
 
-Here's  what the original issue report said: 
+Here is what the original issue report said:
 
 "_In the text panels explaining each part of the `How does it work?` animation, each text panel is positioned/stacked on top of each other and is only hidden by `opacity: 0;`. So you're unable to select any text on any of the panels except the last one._"
 
-The Matrix website is made using Gatsby which is a React based framework for delivering static websites. I wasn't familiar with Gatsby but I use a static site generator (Eleventy) for this website and I know some JavaScript so I decided to jump in.
+The Matrix website is made with Gatsby which is a React based framework for static websites. I wasn't familiar with Gatsby but I use a static site generator (Eleventy) for this website and I know some JavaScript so I decided to jump in.
 
 ## The Solution
 
 I had already cloned the repo and set up a local dev environment following the instructions in the README.md file so what was left was to find the code for the animation.
 
-Searching through the codebase I found the relevant file that controls the animation to be `gatsby/static/how-it-works.js` which has a function called `nextStage`, which controls the animation.
+Searching through the codebase I found the relevant file that controls the animation to be `gatsby/static/how-it-works.js` which has a function called `nextStage` which controls the animation.
 
 Below is the relevant code snippet of `nextStage`:
 
@@ -48,13 +48,13 @@ d3.select("#legend" + (stageIndex + 1)).style("opacity", 1e-6)
     .style("opacity": 1);
 ```
 
-The code selects an element with `id` of `legend` concatenated with `stageIndex` whicg is just the stage number of the animation, gives it `opacity: 1` to make it visible, applies some transition to it, and when done gives it a negative opacity to hide it from view. Then when the next stage of the panel is selected, it starts with a negative opacity (since it's originally hidden) transitions into view and is then given an opacity of 1, to make it the visible.
+The code selects an element with `id` of `legend` concatenated with `stageIndex` which is just the stage number of the animation, gives it `opacity: 1` to make it visible, applies some transition to it, and when done gives it a negative opacity to hide it from view. Then when the next stage of the panel is selected, it starts with a negative opacity (since it's originally hidden) transitions into view and is then given an opacity of 1, to make it the visible.
 
 The fact that the panels are stacked on top of each other, and the current one only invisible because hidden ones are assigned negative opacities, made the text unselectable.
 
 ## The first PR
 
-My first idea was to change the display property of the hidden panels to `display: none` as this would hide the panels from the document flow instead of just making them trasparent as opacity does.
+My first idea was to change the display property of the hidden panels to `display: none` as this would hide the panels from the document flow instead of just making them transparent as opacity does.
 
 I updated the code, gave it a look, saw that it "worked" and sent in a Pull Request. However the PR was not good enough. While it "solved" the problem it also introduced another that I did not notice - it removed the transition between the animation texts.
 
@@ -104,4 +104,4 @@ I've learnt a few things about contributing to OSS and working in teams in gener
 
 I am really happy with how this turned out. I made a (minor) contribution to one of my favorite OSS projects, got really good feedback and honed my software engineering skills in the process. 
 
-I hope my experience inspires other newbies to contribute to Open Souce Software. Also, if you do not already, do check out the Matrix protocol. It's cool and interesting and I honestly think it's the future.
+I hope my experience inspires other newbies to contribute to Open Source Software. Also, if you do not already, do check out the Matrix protocol. It's cool and interesting and I honestly think it's the future.

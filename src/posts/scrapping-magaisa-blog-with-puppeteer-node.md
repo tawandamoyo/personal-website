@@ -9,7 +9,7 @@ tags:
   - "web-scrapping"
 ---
 
-I recently wrote a Node.js scrapper to download blog posts on the website of the late Zimbabwean academic [Dr Alex Magaisa](https://bigsr.africa). I worried that one day the domain and or hosting might expire and we would lose such important, thoughtful and well written material. I also felt that it would also be my own small contribution to keeping the legacy of that brilliant man alive.
+I have been writing a Node.js scrapper to download blog posts on the website of the late Zimbabwean academic [Dr Alex Magaisa](https://bigsr.africa). I worried that one day the domain and or hosting might expire and we would lose such important, thoughtful, and well written material. I also felt that it would also be my own small contribution to keeping the legacy of that brilliant man alive.
 
 My goal was to get all the posts he wrote and save them as either plaintext files or PDFs.
 
