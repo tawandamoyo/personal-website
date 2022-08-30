@@ -6,17 +6,19 @@ layout: 'layouts/page.njk'
 I am in Cape Town. Exploring the Mother City.
 
 Working On:
-    - Becoming a better programmer
-    - Becoming a better writer
-    - Becoming a fitter human
+
+* Becoming a better programmer
+* Becoming a better writer
+* Becoming a fitter human
 
 Reading:
-    - _Thinking in Systems: A Primer_ by Donella Meadows
-    - _Tusculan Disputations_ - Cicero
-    - _Children of Earth and Sky_ - Guy Gavriel Kay
+
+* _Thinking in Systems: A Primer_ by Donella Meadows
+* _Tusculan Disputations_ - Cicero
+* _Children of Earth and Sky_ - Guy Gavriel Kay
 
 Watching:
-    - House of the Dragon
+* House of the Dragon
 
 _Updated August 30, 2022_
 
