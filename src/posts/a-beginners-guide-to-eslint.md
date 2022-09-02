@@ -64,7 +64,7 @@ This will generate a `package.json` file. Now run:
 npm init @eslint/config
 ```
 
-This will walk you through configuring your ESLint settings. You will be asked about the the environment, whether you are using React, if you intend to use ESLint for code formatting and other options.
+This will walk you through configuring your ESLint settings. You will be asked about the environment, whether you are using React if you intend to use ESLint for code formatting, and other options.
 
 The command will also create `.eslintrc` configuration file in the format you specify, that is, either `js`, `yml` or `json`. The rest of this guide uses a `json` format, but the settings are similar.
 
@@ -110,7 +110,7 @@ You can specify your preferred environments in the `.eslintrc` configuration fil
 
 ### Rules
 
-By default ESLint installs some rules for you. Opening the `.eslintrc` configuration file will show the following line:
+By default, ESLint enables some rules for you. Opening the `.eslintrc` configuration file will show the following line:
 
 ```json
 // .eslintrc.json
@@ -168,7 +168,7 @@ To run ESLint on your code, run:
 npx eslint main.js
 ```
 
-This will display any detected errors and warnings in your terminal . A typical ESLint error log is shown below:
+This will display any detected errors and warnings in your terminal. A typical ESLint error log is shown below:
 
 ![ESLint CLI Error Log](/images/eslint-cli-error-output.png)
 
@@ -268,7 +268,7 @@ const matrix = [
 /* eslint-enable */
 ```
 
-It is also possible to specify  within the block comment rules that are to be disabled or enabled.
+It is also possible to specify within the block comment rules that are to be disabled or enabled.
 
 #### Disabling Inline Comments
 
