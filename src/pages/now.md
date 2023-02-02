@@ -3,6 +3,21 @@ title: 'Now'
 permalink: '/now/index.html'
 layout: 'layouts/page.njk'
 ---
+
+Zimbabwe. New Year. New Hopes.
+
+* Becoming a better programmer
+* Becoming a better writer
+* Becoming a fitter human
+
+Reading: 
+* _The Beginning of Infinity_ by David Deutsch
+* _Peak_ by Anders Ericsson
+
+_Updated on 2 Feb, 2023, 21:40 Hrs_
+---
+
+* 
 I am in Cape Town. Exploring the Mother City.
 
 Working On:
